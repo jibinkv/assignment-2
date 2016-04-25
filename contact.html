@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link data-require="bootstrap-css@*" data-semver="3.2.0" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="wrapper">
+                <nav id="navigation">
+                <ul id="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                
+            </nav>
+ <h1>Contact Form</h1> 
+<div id="container">
+<div class="hero-unit">
+<form method="POST" action="#" class="form-horizontal" id="contact-form">
+    <div class="control-group">
+        <label class="control-label" for="name">Name</label>
+        <div class="controls">
+            <input type="text" name="name" id="name" placeholder="Your name">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="email">Email Address</label>
+        <div class="controls">
+            <input type="text" name="email" id="email" placeholder="Your email address">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="subject">Subject</label>
+        <div class="controls">
+            <select id="subject" name="subject">
+                <option value="na" selected="">Choose One:</option>
+                <option value="service">Feedback</option>
+                <option value="suggestions">Suggestion</option>
+                <option value="support">Question</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="message">Message</label>
+        <div class="controls">
+            <textarea name="message" id="message" rows="8" class="span5" placeholder="The message you want to send to us."></textarea>
+        </div>
+    </div>
+    <div class="form-actions">
+        <input type="hidden" name="save" value="contact">
+        <button type="submit" class="btn btn-success">Submit Message</button>
+        <button type="reset" class="btn">Cancel</button>
+    </div>
+</form>
+</div>
+</div>
+</body>
+</html>
